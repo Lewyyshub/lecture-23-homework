@@ -48,7 +48,7 @@ console.log(jami);
 
 // ex 7 (მეექვსე არარი) //
 
-let numberminus = [20,10];
+let numberminus = [20, 10];
 function seeDiference(vaxo) {
   return vaxo.reduce((acc, cur) => {
     return acc - cur;
@@ -57,3 +57,91 @@ function seeDiference(vaxo) {
 let jamii = seeDiference(numberminus);
 console.log(jamii);
 
+// ex 8 //
+
+let multiplye = [1, 2, 3, 4, 5];
+
+function multiplyTwo(multiplye) {
+  return multiplye.map((numb) => {
+    return numb * 2;
+  });
+}
+let results = multiplyTwo(multiplye);
+console.log(results);
+
+// ex 9 //
+
+let strings = ["KUKLA", "DZVUCHKA", "VASHLI", "SAMIKILOLARI"];
+
+function stringsToLowerKey(strings) {
+  return strings.map((stringz) => {
+    return stringz.toLowerCase();
+  });
+}
+let newStrings = stringsToLowerKey(strings);
+console.log(newStrings);
+
+// ex 11 //
+
+let elements = [document.createElement("p")];
+
+elements = elements.map((element, index) => {
+  element.textContent = "მე ვარ ელემენტი";
+  return element;
+});
+let container = document.getElementById("container");
+elements.map((element) => {
+  container.appendChild(element);
+});
+
+// ex 12 //
+
+let squares = [1, 2, 3, 4, 5];
+function Squared(numbresz) {
+  return squares.map((n) => {
+    return n ** 2;
+  });
+}
+let resu = Squared(squares);
+console.log(resu);
+
+// ex 13 //
+// ex 14 //
+let students = [
+  { name: "მარიამი", score: 80 },
+  { name: "გიორგი", score: 75 },
+  { name: "ნინო", score: 90 },
+];
+
+students.forEach((student) => {
+  student.score += 5;
+});
+console.log(students);
+
+// ex 16 //
+
+// ex 17 //
+let elementz = ["ელემენტი 1", "ელემენტი 2"];
+let containerr = document.getElementById("container");
+
+for (let index = 0; index < elementz.length; index++) {
+  let div = document.createElement("div");
+  div.textContent = elementz[index];
+  container.appendChild(div);
+}
+
+// ex 18 //
+
+// ex 19 //
+
+let cifrebi = [2, 11, 532, 7];
+
+function moreThanTen(numbers) {
+  return cifrebi.filter((numz) => {
+    return numz > 10;
+  });
+}
+let filtered = moreThanTen(numbers);
+console.log(filtered);
+
+// ex 20 // 
