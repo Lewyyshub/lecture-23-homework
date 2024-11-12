@@ -106,6 +106,7 @@ let resu = Squared(squares);
 console.log(resu);
 
 // ex 13 //
+  
 // ex 14 //
 let students = [
   { name: "მარიამი", score: 80 },
@@ -132,6 +133,11 @@ for (let index = 0; index < elementz.length; index++) {
 
 // ex 18 //
 
+let = arrOfNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let index = 0; index < arrOfNums.length; index++) {
+
+}
+
 // ex 19 //
 
 let cifrebi = [2, 11, 532, 7];
@@ -144,4 +150,22 @@ function moreThanTen(numbers) {
 let filtered = moreThanTen(numbers);
 console.log(filtered);
 
-// ex 20 // 
+// ex 20 //
+let ArrOfDivs = [];
+
+for (let index = 0; index < 6; index++) {
+  let div = document.createElement("div");
+  ArrOfDivs.push(div);
+}
+ArrOfDivs[0].classList.add("box");
+ArrOfDivs[1].classList.add("yuti");
+ArrOfDivs[2].classList.add("vigac");
+ArrOfDivs[3].classList.add("ragac");
+ArrOfDivs[4].classList.add("rame");
+ArrOfDivs[5].classList.add("box");
+
+let newArray = ArrOfDivs.filter((index) => {
+  return index.classList.contains("box");
+});
+
+console.log(newArray);
